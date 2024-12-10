@@ -165,7 +165,13 @@ defmodule VintageNet.IP.IPv4Config do
                  "-x",
                  "hostname:#{hostname}",
                  "-s",
-                 BEAMNotify.bin_path()
+                 BEAMNotify.bin_path(),
+                 "-t",
+                 "1000",
+                 "-T",
+                 "3",
+                 "-A",
+                 "30"
                ],
                opts:
                  Command.add_muon_options(
